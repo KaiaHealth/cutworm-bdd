@@ -1,0 +1,8 @@
+.DS_Store
+.build
+.swiftlint.yml
+.swiftpm
+Package.resolved
+Package.swift
+/Sources
+/Tests
