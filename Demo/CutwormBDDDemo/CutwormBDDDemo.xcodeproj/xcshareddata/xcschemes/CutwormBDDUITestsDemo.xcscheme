@@ -30,7 +30,7 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <TestPlans>
          <TestPlanReference
-            reference = "container:CutwormBDDUITestsDemo.xctestplan"
+            reference = "container:CutwormBDDDemoUITests/CutwormBDDDemoUITests.xctestplan"
             default = "YES">
          </TestPlanReference>
       </TestPlans>
