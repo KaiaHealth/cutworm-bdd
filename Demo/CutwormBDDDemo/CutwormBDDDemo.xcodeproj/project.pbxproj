@@ -34,6 +34,7 @@
 		3E53AA832BA04F7100D8FF3E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3E53AA872BA05BE300D8FF3E /* CutwormBDDLocalWrapper */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = CutwormBDDLocalWrapper; sourceTree = "<group>"; };
 		3E53AA8A2BA05DCB00D8FF3E /* features */ = {isa = PBXFileReference; lastKnownFileType = folder; path = features; sourceTree = "<group>"; };
+		3EB00FBF2BA2EFFD00ECB287 /* CutwormBDDDemoUITests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = CutwormBDDDemoUITests.xctestplan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +89,7 @@
 		3E53AA662B9F94CF00D8FF3E /* CutwormBDDDemoUITests */ = {
 			isa = PBXGroup;
 			children = (
+				3EB00FBF2BA2EFFD00ECB287 /* CutwormBDDDemoUITests.xctestplan */,
 				3E53AA812BA04ED100D8FF3E /* CutwormBDDDemoUITests.swift */,
 				3E53AA8A2BA05DCB00D8FF3E /* features */,
 			);

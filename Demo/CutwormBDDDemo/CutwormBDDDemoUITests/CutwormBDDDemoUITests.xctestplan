@@ -1,0 +1,28 @@
+{
+  "configurations" : [
+    {
+      "id" : "E7E0906E-294A-4633-9B2C-094CA2F96B02",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:CutwormBDDDemo.xcodeproj",
+      "identifier" : "3E53AA472B9F94CD00D8FF3E",
+      "name" : "CutwormBDDDemo"
+    }
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:CutwormBDDDemo.xcodeproj",
+        "identifier" : "3E53AA622B9F94CF00D8FF3E",
+        "name" : "CutwormBDDDemoUITests"
+      }
+    }
+  ],
+  "version" : 1
+}
