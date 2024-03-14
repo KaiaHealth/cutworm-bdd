@@ -34,6 +34,7 @@ public struct ContentView: View {
             }
         }
         .navigationTitle("Login")
+        .navigationViewStyle(.stack)
         .fullScreenCover(isPresented: $showingHomeScreen) {
             HomeScreen()
         }

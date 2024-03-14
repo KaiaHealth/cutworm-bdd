@@ -1,4 +1,4 @@
-// swift-tools-version: 5.10
+// swift-tools-version:5.7
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 //
 // Umbrella package to workaround "The selected package cannot be a direct ancestor of the project."
@@ -26,7 +26,8 @@ let package = Package(
     targets: [
         .target(
             name: "CutwormBDDLocalWrapper",
-            dependencies: ["CutwormBDD"]
+            dependencies: ["CutwormBDD"],
+            path: "Sources"
         )
     ]
 )
