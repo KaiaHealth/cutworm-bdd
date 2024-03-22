@@ -1,4 +1,6 @@
-# ``CutwormBDD``
+# `CutwormBDD`
+
+[![SwiftPM](https://img.shields.io/badge/SPM-supported-DE5C43.svg?style=flat)](https://swift.org/package-manager/) [![License](https://img.shields.io/badge/License-Apache-blue)](https://github.com/KaiaHealth/cutworm-bdd/blob/main/LICENSE) [![Platform](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2FKaiaHealth%2Fcutworm-bdd%2Fbadge%3Ftype%3Dplatforms)](https://swiftpackageindex.com/KaiaHealth/cutworm-bdd) [![Swift Versions](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2FKaiaHealth%2Fcutworm-bdd%2Fbadge%3Ftype%3Dswift-versions)](https://swiftpackageindex.com/KaiaHealth/cutworm-bdd)
 
 A native, lightweight BDD testing library for Swift/XCTest.
 
@@ -17,6 +19,7 @@ To get a feel for how Cutworm works, open the CutwormBDDDemo project in Xcode an
 First, create a directory named `features` in your test target that contains the Gherkin feature definitions.
 
 `features/authentication.feature`
+
 ```cucumber
 Feature: Authentication
 
@@ -29,6 +32,7 @@ Feature: Authentication
 ```
 
 For Swift packages, the test target should be set up with a dependency to CutwormBDD and the features in resources:
+
 ```swift
 .testTarget(
     name: "MyTests",
@@ -87,6 +91,7 @@ class AuthenticationTests: XCTestCase, BDDTestCase {
 ```
 
 Finally, run the tests. You'll see the BDD results printed in the Console, and exported to a JSON file:
+
 ```
 Exporting BDD results for MyTests...
 Feature: Authentication
@@ -101,6 +106,7 @@ BDD result JSON is saved at path ...json
 ```
 
 In case the second step failed, the results would look like this:
+
 ```
 Feature: Authentication
 Scenario: Email login with valid credentials
@@ -110,17 +116,13 @@ Steps:
 ⏩ then the user is successfully logged in (0.00s)
 ```
 
+## Contributing
+
+We always appreciate contributions from the community. To make changes to the project, you can clone the repo and open the folder in Xcode. Once you've made your changes, you can run the tests to ensure everything is working as expected and submit a pull request.
+
+See the [open issues](https://github.com/KaiaHealth/cutworm-bdd/issues?q=is:issue+is:open+sort:updated-desc) for a list of proposed features (and known issues).
+
 ## Limitations
 
 - Some Gherkin constructs are not yet supported, including `Scenario Outline`, `Examples`, `Background`, `Rule`, and tags.
 - Export is currently only to a JSON file. This can be limiting with some real device testing providers if they don't provide access to the file.
-
-## Topics
-
-### Essentials
-
-- ``BDDTestCase``
-
-### Utilities
-
-- ``BDDStepChainable``
