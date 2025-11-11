@@ -39,7 +39,7 @@ final class FeatureTesterTests: XCTestCase {
 
         try tester.beginScenario(name: "Log in")
         try tester.perform(step: Step(type: .given, name: "the user has an account"))
-        tester.handleEvent(.issueOccurred)
+        tester.handleEvent(.failureOccurred)
         try tester.perform(step: Step(type: .when, name: "the user enters their password"))
         try tester.perform(step: Step(type: .then, name: "the user is logged in"))
         try tester.endScenario()
@@ -62,7 +62,7 @@ final class FeatureTesterTests: XCTestCase {
 
         try tester.beginScenario(name: "Log in")
         try tester.perform(step: Step(type: .given, name: "the user has an account"))
-        tester.handleEvent(.issueOccurred)
+        tester.handleEvent(.failureOccurred)
         // Simulate `continueAfterFailure = false`: after a failure occurs, the following steps won't be executed.
         try tester.endScenario()
 
