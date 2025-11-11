@@ -45,7 +45,7 @@ final class ScenarioTester {
 
     func handle(event: FeatureTester.TestEvent) {
         switch event {
-        case .issueOccurred:
+        case .failureOccurred:
             currentStepState?.isFailed = true
         }
     }

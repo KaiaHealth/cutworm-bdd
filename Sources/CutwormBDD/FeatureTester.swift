@@ -8,7 +8,7 @@ import Combine
 
 final class FeatureTester {
     enum TestEvent {
-        case issueOccurred
+        case failureOccurred
     }
 
     static let shared = FeatureTester()

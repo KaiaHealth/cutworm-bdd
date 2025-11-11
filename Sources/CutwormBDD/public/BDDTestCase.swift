@@ -64,7 +64,8 @@ public extension BDDTestCase {
     ) {
         let testObservationCenter = TestObservationCenter.shared
         let testEventPublisher = testObservationCenter.issuePublisher
-            .map { _ in FeatureTester.TestEvent.issueOccurred }
+            .filter(\.isFailure)
+            .map { _ in FeatureTester.TestEvent.failureOccurred }
             .eraseToAnyPublisher()
 
         featureTester.receiveTestEvents(testEventPublisher)
